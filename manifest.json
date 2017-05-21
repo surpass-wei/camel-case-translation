@@ -1,0 +1,11 @@
+{
+  "name" : "峰坨翻译",
+  "version" : "1.0",
+  "description" : "翻译选中文字，支持峰坨式、中划线、下划线等特殊格式",
+  "permissions": [ "contentSettings", "tabs" ],
+  "browser_action": {
+     "default_icon": "logo.png",
+     "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
