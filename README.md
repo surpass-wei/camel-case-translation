@@ -1,4 +1,5 @@
 # 峰坨翻译
+![](https://img.shields.io/github/release/surpass-wei/peak-lump-translation.svg)
 
 ## 这是什么
 一个基于Chrome的翻译插件
