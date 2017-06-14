@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
 
-    <title>Popup</title>
-    <style>
-      dt { white-space: nowrap }
-    </style>
-    
-  </head>
-  <body>
-      <input type="text" placeholder="抓取或输入待翻译的文字"/>
-      <input type="text" />
-      <select>
-        
-      </select>
-      <button id="btn">点击我</button>
-      <script src="js/md5.min.js"></script>
-      <script src="popup.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+</head>
+<style>
+  body {
+    min-width: 300px;
+  }
+  table{
+    width: 100%;
+  }
+  #translateBtn{
+    float: right
+  }
+</style>
+
+<body>
+  <table border="1">
+    <tr>
+      <td>
+        <textarea id="content" type="text" placeholder="抓取或输入待翻译的文字"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select id="whatFrom">
+          <option value="auto">自动</option>
+          <option value="zh-CHS">中文</option>
+          <option value="ja">日文</option>
+          <option value="EN">英文</option>
+          <option value="ko">韩文</option>
+          <option value="ru">俄文</option>
+          <option value="de">德文</option>
+          <option value="it">意大利文</option>
+          <option value="th">泰文</option>
+        </select> >>
+        <select id="whatTo">
+          <option value="auto">自动</option>
+          <option value="zh-CHS">中文</option>
+          <option value="ja">日文</option>
+          <option value="EN">英文</option>
+          <option value="ko">韩文</option>
+          <option value="ru">俄文</option>
+          <option value="de">德文</option>
+          <option value="it">意大利文</option>
+          <option value="th">泰文</option>
+        </select>
+        <button id="translateBtn">给我翻</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="resultDiv">
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <script src="js/md5.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+
 </html>
