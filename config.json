@@ -1,0 +1,40 @@
+{
+    "languageOption": [
+        {
+            "name": "自动",
+            "value": "auto"
+        },
+        {
+            "name": "中文",
+            "value": "zh-CHS"
+        },
+        {
+            "name": "英文",
+            "value": "EN"
+        },
+        {
+            "name": "日文",
+            "value": "ja"
+        },
+        {
+            "name": "韩文",
+            "value": "ko"
+        },
+        {
+            "name": "俄文",
+            "value": "ru"
+        },
+        {
+            "name": "德文",
+            "value": "de"
+        },
+        {
+            "name": "意大利文",
+            "value": "it"
+        },
+        {
+            "name": "泰文",
+            "value": "th"
+        }
+    ]
+}

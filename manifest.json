@@ -1,11 +1,16 @@
 {
-  "name" : "峰坨翻译",
+  "name" : "驼峰翻译",
   "version" : "1.0",
   "description" : "翻译选中文字，支持峰坨式、中划线、下划线等特殊格式",
+  "icons": {
+    "16": "img/logo16.png",             
+    "48": "img/logo48.png",            
+    "128": "img/logo128.png" 
+  },
   "permissions": [ "contentSettings", "tabs", "*://openapi.youdao.com/api*" ],
   "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
   "browser_action": {
-     "default_icon": "logo.png",
+     "default_icon": "img/logo16.png",
      "default_popup": "popup.html"
   },
   "manifest_version": 2

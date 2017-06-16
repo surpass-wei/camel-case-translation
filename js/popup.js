@@ -39,8 +39,11 @@ var doGet = function (theUrl, callback) {
 }
 
 //  点击翻译
-var byClick = function () {
-    var theQ = document.getElementById('content').value;
+var byInput = function (event) {
+    if (event.keyCode != 13) {
+        return;
+    }
+    var theQ = document.getElementById('contentArea').value;
     requiredParam.q = convertToBase(theQ);
     requiredParam.from = document.getElementById('whatFrom').value;
     requiredParam.to = document.getElementById('whatTo').value;
@@ -73,4 +76,5 @@ var bySelect = function () {
     alert("取词翻译，尚未完成");
 }
 
-document.getElementById('translateBtn').onclick = byClick;
+//document.getElementById('translateBtn').onclick = byClick;
+document.getElementById("contentArea").onkeypress = byInput; 
